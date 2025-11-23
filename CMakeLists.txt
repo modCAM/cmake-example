@@ -23,7 +23,8 @@ find_package(libigl CONFIG REQUIRED)
 include(FetchContent)
 FetchContent_Declare(
     modCAM
-    URL ${CMAKE_CURRENT_LIST_DIR}/../modcam # TODO: Replace placeholder URL with git repo
+    GIT_REPOSITORY https://github.com/modCAM/modcam.git
+	GIT_TAG origin/main
 	FIND_PACKAGE_ARGS
 )
 FetchContent_MakeAvailable(modCAM)
